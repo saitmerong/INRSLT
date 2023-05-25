@@ -59,7 +59,7 @@ This simple modification widens the parameter search space to sufficiently explo
 </table>
 <br />
 
-### __Proposed (learned scales) vs. Trained Sparse__
+### Proposed (learned scales) vs. Trained Sparse
 <!-- ![](images/Beauty_599_GT.png)
 ![](images/Beauty_599_GLW_save.png)
 ![](images/Beauty_599_NeRV_sparse_save.png)
@@ -89,7 +89,7 @@ This simple modification widens the parameter search space to sufficiently explo
 </table>
 <br />
 
-### __Proposed (learned scales) vs. Proposed (fixed scales)__
+### Proposed (learned scales) vs. Proposed (fixed scales)
 <!-- ![](images/Jockey_300_GT.png)
 ![](images/Jockey_300_GLW_save.png)
 ![](images/Jockey_300_MW_save.png)
