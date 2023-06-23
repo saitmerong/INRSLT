@@ -1,18 +1,17 @@
 
 <!--## Is Overfitting Necessary for Implicit Video Representation?-->
 
+<!-- ICML -->
+<!--<h4><p style="text-align: center;">The 40th International Conference on Machine Learning (ICML 2023)</p><h4>-->
 
 <!-- authors -->
 <!-- Author 1, Author 2, Author 3 (†: \dagger)-->
 <h3><p style="text-align: center;">Hee Min Choi<sup>* †</sup> · Hyoa Kang<sup>*</sup> · Dokwan Oh</p></h3>
-
-<br />
 <br />
 
 <!-- abstract -->
 ## __Abstract__
-Compact representation of multimedia signals using implicit neural representations (INRs) has advanced significantly over the past few years, and recent works address their applications to video. Existing studies on video INR have focused on network architecture design as all video information is contained within network parameters. Here, we propose a new paradigm in efficient INR for videos based on the idea of strong lottery ticket (SLT) hypothesis, which demonstrates the possibility of finding an accurate subnetwork mask, called supermask, for a randomly initialized classification network without weight training. Specifically, we train multiple supermasks with a hierarchical structure for a randomly initialized image-wise video representation model without weight updates. Different from a previous approach employing hierarchical supermasks, a trainable scale parameter for each mask is used instead of multiplying by the same fixed scale for all levels. 
-This simple modification widens the parameter search space to sufficiently explore various sparsity patterns, leading the proposed algorithm to find stronger subnetworks. Moreover, extensive experiments on popular UVG benchmark show that random subnetworks obtained from our framework achieve higher reconstruction and visual quality than fully trained models with similar encoding sizes. Our study is the first to demonstrate the existence of SLTs in video INR models and propose an efficient method for finding them.
+Compact representation of multimedia signals using implicit neural representations (INRs) has advanced significantly over the past few years, and recent works address their applications to video. Existing studies on video INR have focused on network architecture design as all video information is contained within network parameters. Here, we propose a new paradigm in efficient INR for videos based on the idea of strong lottery ticket (SLT) hypothesis (Zhou et al., 2019), which demonstrates the possibility of finding an accurate subnetwork mask, called supermask, for a randomly initialized classification network without weight training. Specifically, we train multiple supermasks with a hierarchical structure for a randomly initialized image-wise video representation model without weight updates. Different from a previous approach employing hierarchical supermasks (Okoshi et al., 2022), a trainable scale parameter for each mask is used instead of multiplying by the same fixed scale for all levels. This simple modification widens the parameter search space to sufficiently explore various sparsity patterns, leading the proposed algorithm to find stronger subnetworks. Moreover, extensive experiments on popular UVG benchmark show that random subnetworks obtained from our framework achieve higher reconstruction and visual quality than fully trained models with similar encoding sizes. Our study is the first to demonstrate the existence of SLTs in video INR models and propose an efficient method for finding them.
 <br />
 <br />
 
@@ -22,11 +21,6 @@ This simple modification widens the parameter search space to sufficiently explo
 <img src="./figures/frameworks.png" alt="Frameworks" s/>
 <figcaption>Overview of the proposed video representation framework.</figcaption>
 </figure>
-<!--using figure
-<figure>
-<img src="./figures/frameworks.png" alt="Frameworks" style="width:100%">
-<figcaption>Overview of the proposed video representation framework. In the encoding phase, our video representation framework finds multiple supermasks and corresponding scale parameters in an implicit video representation network without training its weights. In the forward path, scores $$s$$ of the randomly initialized network weights $$w$$ are sorted, and $N$ masks are assigned to the weights using step functions $$h_{k_n}$$'s. The threshold scores of the step functions are determined by pre-defined densities $k_n$'s of nonzeros in the supermasks. The masks are then scaled by learnable parameters $\alpha_n$'s and accumulated to calculate the output of the network. In the backward path, the mean-squared error loss between the ground truth video frames and the network outputs is computed, and only the scores $$s$$ and scales $$\alpha_n$$'s are updated by back-propagation. As all network parameters are fixed and random, we can recover the encoded images by simple network inference using random seed used at train time, $$N$$ final supermasks and learned scale parameters $$\alpha_n$$'s in the decoding phase. This differs from the existing implicit video representation methods, which require storing model weights and biases.</figcaption>
-</figure> -->
 <br />
 <br />
 
