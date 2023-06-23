@@ -3,7 +3,9 @@
 
 
 <!-- authors -->
-<!-- Author 1, Author 2, Author 3 -->
+<!-- Author 1, Author 2, Author 3 (†: \dagger)-->
+<h2><p style="text-align: center;">Hee Min Choi<sup>* †</sup> · Hyoa Kang<sup>*</sup> · Dokwan Oh</p></h2>
+
 <br />
 <br />
 
@@ -269,3 +271,15 @@ We further provide [FLIP maps](https://dl.acm.org/doi/10.1145/3406183) for the d
     </tr>
 </table>
 <br />
+<br />
+
+<!-- citation -->
+## __Citation__
+```
+@inproceedings{choi2023inrslt,
+    author = {Choi, Hee min and Kang, Hyoa and Oh, Dokwan},
+    title = {Is Overfitting Necessary for Implicit Video Representation?},
+    booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+    year = {2023}
+}
+```
