@@ -4,7 +4,7 @@
 
 <!-- authors -->
 <!-- Author 1, Author 2, Author 3 (†: \dagger)-->
-<h2><p style="text-align: center;">Hee Min Choi<sup>* †</sup> · Hyoa Kang<sup>*</sup> · Dokwan Oh</p></h2>
+<h3><p style="text-align: center;">Hee Min Choi<sup>* †</sup> · Hyoa Kang<sup>*</sup> · Dokwan Oh</p></h3>
 
 <br />
 <br />
