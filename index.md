@@ -272,7 +272,7 @@ We further provide [FLIP maps](https://dl.acm.org/doi/10.1145/3406183) for the d
 ## __Citation__
 ```
 @inproceedings{choi2023inrslt,
-    author = {Choi, Hee min and Kang, Hyoa and Oh, Dokwan},
+    author = {Choi, Hee Min and Kang, Hyoa and Oh, Dokwan},
     title = {Is Overfitting Necessary for Implicit Video Representation?},
     booktitle = {Proceedings of the 40th International Conference on Machine Learning},
     year = {2023}
